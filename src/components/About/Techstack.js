@@ -1,52 +1,62 @@
-import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
   DiPython,
-  DiGit,
-} from "react-icons/di";
+  DiGit
+} from 'react-icons/di';
 import {
   SiPytorch,
   SiFirebase,
   SiNextdotjs,
-} from "react-icons/si";
+  SiCsharp,
+  SiTypescript,
+  SiAngular,
+  SiDotnet,
+  SiAzurepipelines,
+  SiAzurefunctions,
+  SiPostgresql,
+  SiMysql,
+  SiRabbitmq
+} from 'react-icons/si';
+import ReactTooltip from 'react-tooltip';
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+    <Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
+      <Col data-tip='C#' xs={4} md={2} className='tech-icons'>
+        <ReactTooltip backgroundColor='#381353' />
+        <SiCsharp />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col data-tip='Javascript' xs={4} md={2} className='tech-icons'>
         <DiJavascript1 />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+      <Col data-tip='TypeScript' xs={4} md={2} className='tech-icons'>
+        <SiTypescript />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col data-tip='React' xs={4} md={2} className='tech-icons'>
         <DiReact />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+      <Col data-tip='Angular' xs={4} md={2} className='tech-icons'>
+        <SiAngular />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+      <Col data-tip='.NET' xs={4} md={2} className='tech-icons'>
+        <SiDotnet />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+      <Col data-tip='Rabbit MQ' xs={4} md={2} className='tech-icons'>
+        <SiRabbitmq />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+      <Col data-tip='Azure Functions' xs={4} md={2} className='tech-icons'>
+        <SiAzurefunctions />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+      <Col data-tip='PostgreSql' xs={4} md={2} className='tech-icons'>
+        <SiPostgresql />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPytorch />
+      <Col data-tip='MySql' xs={4} md={2} className='tech-icons'>
+        <SiMysql />
       </Col>
     </Row>
   );
